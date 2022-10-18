@@ -9,14 +9,15 @@
 //     - getElementById().innerHTML = "...valore password..."
 //    `la tua password è: ${nome}${colore}{}`
 
-let nome = prompt(`Scrivi il tuo nome`);
-let cognome = prompt(`Scrivi il tuo cognome`);
-let colorePreferito = prompt(`Scrivi il tuo colore preferito`)
 
-let passwordUtente = nome + cognome + colorePreferito;
-console.log(passwordUtente)
+let Name = prompt(`Write your name`);
+let surname = prompt(`Write your surname`);
+let favoriteColor = prompt(`Write your favorite color`);
 
-let frase = `la tua password è ${passwordUtente}`
+let passwordUser = Name + surname + favoriteColor;
+console.log(passwordUser)
 
-document.getElementById(`nuovaPassword`).innerHTML = 
-`la tua nuova password è ${nome + cognome + colorePreferito}23`
+let frase = `Your new password is: ${passwordUser}`
+
+document.getElementById(`newPassword`).innerHTML += 
+`Your new password is: ${Name + surname + favoriteColor}23  🐲`
