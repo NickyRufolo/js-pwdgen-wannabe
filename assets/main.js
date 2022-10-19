@@ -10,14 +10,18 @@
 //    `la tua password è: ${nome}${colore}{}`
 
 
-let Name = prompt(`Write your name`);
-let surname = prompt(`Write your surname`);
-let favoriteColor = prompt(`Write your favorite color`);
+let Name = prompt(`Write your name: `);
+let surname = prompt(`Write your surname: `);
+let favoriteColor = prompt(`Write your favorite color: `);
 
-let passwordUser = Name + surname + favoriteColor;
-console.log(passwordUser)
+// console.log(Name, surname, color) controlla cio che c'è nelle parentesi nella console
 
-let frase = `Your new password is: ${passwordUser}`
+// let passwordUser = Name + surname + favoriteColor;
+// console.log(passwordUer)
+
+// let frase = `Your new password is: ${passwordUser}`
 
 document.getElementById(`newPassword`).innerHTML += 
 `Your new password is: ${Name + surname + favoriteColor}23  🐲`
+
+/*----------------------------*/
